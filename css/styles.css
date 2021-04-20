@@ -1,0 +1,36 @@
+body {
+  background-color:  #95e4f8;
+}
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: grey;
+  border-width: 10px;
+  width: 30%;
+}
+
+h1 {
+  color: #3e6ce9;
+}
+h2 {
+  color: #3e6ce9;
+}
+h3 {
+  color: #3e6ce9;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #6edfbd;
+}
