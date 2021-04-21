@@ -9,14 +9,21 @@ hr {
   width: 30%;
 }
 
+.top-box h1{
+  margin:0;
+}
+
 h1 {
   color: #3e6ce9;
+  margin-bottom: 0;
 }
 h2 {
   color: #3e6ce9;
+  margin-bottom: 0;
 }
 h3 {
   color: #3e6ce9;
+  margin-bottom: 0;
 }
 
 table {
