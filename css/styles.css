@@ -1,6 +1,7 @@
 body {
   background-color:  #95e4f8;
   margin: 0;
+  text-align: centre;
 }
 
 hr {
@@ -8,7 +9,7 @@ hr {
   border-top-style: dotted;
   border-color: #04009a;
   border-width: 10px;
-  width: 30%;
+  width: 10%;
 }
 
 .top-container {
@@ -17,9 +18,8 @@ hr {
   background-color:#c0fefc;
   top: 20px;
   padding: 10px;  
-  margin: 10px ;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
+  box-shadow: 10px 10px rgba(0,0,0,0.2)
 }
 .middle-container {
   width: 70%;
@@ -27,9 +27,8 @@ hr {
   background-color:#c0fefc;
   top: 20px;
   padding: 10px;  
-  /* margin: 10px */
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
+  box-shadow: 10px 10px rgba(0,0,0,0.2)
 }
 .bottom-container {
   width: 20%;
@@ -37,15 +36,14 @@ hr {
   background-color:#c0fefc;
   top: 20px;
   padding: 10px;  
-  margin-left: auto;
-  margin-right: auto;
-  /* margin: 10px */
+  margin: 0 auto 0 auto;
+  box-shadow: 10px 10px rgba(0,0,0,0.2)
 }
 
 h1 {
   color: #3e6ce9;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin: 0 auto 0 auto;
+  text-align: center ;
   font-weight: bold;
   font-variant: small-caps;
   text-decoration: underline;
@@ -55,13 +53,12 @@ h2 {
   text-decoration: underline;
   margin-top: 0px;
   color: #3e6ce9;
-  margin-bottom: 0;
-  margin: auto;
-
+  margin: 0 auto 0 auto;
+  text-align: center;
 }
 h3 {
   color: #3e6ce9;
-  margin-bottom: 0;
+  margin: 0 auto 0 auto;
 }
 
 table {
@@ -72,7 +69,8 @@ table {
 
 td, th {
   border: 1px solid #77acf1;
-  text-align: left;
+  text-align: center;
+  box-sizing: ;
   padding: 8px;
 }
 
@@ -88,10 +86,18 @@ img {
 }
 
 p {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
 }
 a {
+  margin: 0 auto 0 auto;
+}
+
+.underme {
+  text-decoration: underline;
+}
+
+.center {
   margin-left: auto;
   margin-right: auto;
+  border: solid #2ac5ec
 }
