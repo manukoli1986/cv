@@ -5,16 +5,17 @@
     <meta name="descriptions" content="This website contains information about Mayank Koli and his biography.">
     <title>Mayank's Personal Site</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/cloud.styles.css"> -->
     <link rel="icon" href="image/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div class="top-container">
+    <div class="top-container" id='image'>
       <img src="image/me1.png" alt="Mayank Profile Picture">
       <h1>I'm</h1>
       <h1>Mayank Koli.</h1>
       <p><em>Sr. <span class="underme">DevOps</span> Engineer/<span class="underme">Cloud</span> Engineer</em></p>
-      <p><a href="attachments/CV.pdf" target="_blank">Resume</a></p>
+      <p><a href="attachments/CV.pdf" target="_blank">Get CV</a></p>
       <a href="https://www.linkedin.com/in/mayankckoli/" class="icon-linkedin" target="_blank" >
         <i class="fa fa-linkedin-square" style="font-size:30px"></i>
       </a>
@@ -137,9 +138,17 @@
         </ul>
     </div>
     <hr>
-    <div class="bottom-container">
-      <h2><a href="contactme.html">Contact Me</a></h2>
+    <div class="bottom-container" id="contactBtn">
+      <h2>Contact Me</a></h2>
+        <form action="contactme.html">
+          <button id="btn" class="btn">
+            Click
+          </button>
+        </form>
+
     </div>
     <hr>
+    
   </body>
 </html>
+<script src="scripts/index.js"></script>
