@@ -1,156 +1,624 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="descriptions" content="This website contains information about Mayank Koli and his biography.">
-    <title>Mayank's Personal Site</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- <link rel="stylesheet" href="css/cloud.styles.css"> -->
-    <link rel="icon" href="image/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <div class="top-container" id='image'>
-      <img src="image/me1.png" alt="Mayank Profile Picture">
-      <h1>I'm</h1>
-      <h1>Mayank Koli.</h1>
-      <p><em>Sr. <span class="underme">DevOps</span> Engineer/<span class="underme">Cloud</span> Engineer</em></p>
-      <p><a href="attachments/CV.pdf" target="_blank">Get CV</a></p>
-      <a href="https://www.linkedin.com/in/mayankckoli/" class="icon-linkedin" target="_blank" >
-        <i class="fa fa-linkedin-square" style="font-size:30px"></i>
-      </a>
-      <a href="https://github.com/manukoli1986" class="icon-github" target="_blank">
-        <i class="fa fa-github" style="font-size:30px"></i>
-      </a>
-    </div>
-    <hr>
-    <div class="middle-container">
-      <h2>Hobbies</h2>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Mayank's Personal Site</title>
+
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/img/favicon.ico">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.10.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Mayank Koli</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://github.com/manukoli1986" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/mayankckoli/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="attachments/Mayank_Koli.pdf" target="_blank">CV</a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li>Spend free time by doing outdoor activities with friends</li>
-          <li>When I get bore I mostly watch movies or go on bike ride</li>
-          <li>Help others to achieve any task either home or outside</li>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Skills</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#Projects" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
+      </nav><!-- .nav-menu -->
     </div>
-    <hr>
-    <div class="middle-container">
-      <h2>Project Summary</h2>
-        <ul>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Mayank Koli</h1>
+      <p>I'm <span class="typed" data-typed-items="DevOps SME, Cloud SME, Solution Architect, Developer, Freelancer"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>I am a passionate technology enthusiast who loves working on new emerging technologies that helps solve day to day problems and also help automate many of the common repetitive activities thereby transforming business problems into actionable solutions.
+            With 10+ Years of technology experience with expertise in architecting, designing and implementing solutions by utilising latest cloud native technologies that meet client and businesses objectives. Specializes in building, scaling and managing highly available web services with key interest in Cloud Service Platform, Security, Automation, Provisioning, High Availability, Orchestration, Container Technologies, Disaster Recovery, Monitoring, Centralize Logging, Configuration Management, CI/CD, Version management and troubleshooting. Experienced in working with enterprise customers worldwide. 
+            Passionate to work in multiple customer acquisitions across the organisation.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>DevSecOps &amp; Cloud Architect</h3>
+            <p class="fst-italic">Cloud & DevSecOps Specialist with strong skills in AWS/GCP/Azure, CI/CD, Kubernetes, Python and Terraform IAAC with over 10+ years of experience in planning, implementing and maintaining Infra, business applications and microservices in AWS, GCP and hybrid Cloud leveraging Configuration Management, Container Orchestration and
+Continuous Integration tools.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://manukoli1986.github.io/cv</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 88266 34734</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New Delhi, India</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelors Of Commerce</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>mayank.c.koli@gmail.com</span></li>
+                </ul>
+              </div>
+            </div>
+            <!-- <p>
+              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
+              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+            </p> -->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- 
+    <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Facts</h2>
+          <p> suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> consequuntur quae</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+   -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>I have hands on experiences on below tools......</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">AWS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Kubernetes <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Python Programming <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="progress">
+              <span class="skill">Linux <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">GCP <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Terraform IAAC <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>Passionate cloud infra and containerization with 10+ years of experience working in platform modernization, technology integration, solution development, and process improvement initiatives. 
+            Strategist for cloud solutions (Private, GCP, AWS, Azure, Hybrid) Carrying rich experience of Implementing and Migration planning for true world IT scenarios. Well-developed knowledge and understanding of the global cloud infrastructure marketplace. </p>
+        </divi>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Mayank Koli</h4>
+              <p><em></em></p>
+              <ul>
+                <li>New Delhi, India</li>
+                <li>+91-8826634734</li>
+                <li>mayank.c.koli@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Certifications</h4>
+              <li>Certified Kubernetes Security Specialist</li>
+              <li>Certified Kubernetes Application Developer</li>
+              <li>Certified Kubernetes Administrator</li>
+              <li>AWS Certified Solutions Architect - Associate</li>
+              <li>GCP Associate Cloud Engineer Certification</li>
+              <li>Terraform Associate</li>
+              <li>GitOps Certified by ArgoCD</li>
+              <li>Redhat Certified Virtualization Administrator</li>
+              <li>Redhat Certified Engineer</li>
+            </div>
+            <div class="resume-item">
+              <h4>Bachelor of Commerce</h4>
+              <h5>2007 - 2011</h5>
+              <p><em>Delhi University, New Delhi</em></p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Senior Associate</h4>
+              <h5>2021 - Present</h5>
+              <p><em>Cognizant Technology Pvt Ltd, Bangalore, IN </em></p>
+              <ul>
+                <li>Implemented a new cloud infrastructure for the customers, resulting in faster and more reliable service for customers</li>
+                <li>Automated the provisioning of new development and test environments in the cloud, reducing the time to spin up.</li>
+                <li>Implementing IAAC templates on AWS and its services like AWS IAM, VPC, EC2, RDS, S3, ELB, Auto Scaling, Route 53, Cloud Watch, Cloud Trail, SQS, SNS, Deploy, Code Build Code Pipeline and create custom-sized VPC, subnets, NAT, EC2 instances, ELB and Security groups</li>
+                <li>Automation of Kubernetes native PAAS platform using python boto3 and terraform</li>
+                <li>Endorsing technological advancements and maximizing operational efficiency</li>
+                <li>Experienced in working as a Platform Engineer / DevOps Engineer within an agile organization and demonstrated ability to use tools like AWS, Kubernetes, Docker, CI/CD, Python, Ansible, and Terraform to build robust, scalable, and user-focused solutions</li>
+                <li>Always ready to take ownership of work from understanding the requirements to implementation, testing, and maintenance. (End to End)</li>
+                <li>Implemented SRE capabilities across all verticals to get more insights into applications</li>
+                <li>SRE practice through daily scrum with the Product owner, Engineer, Architects, Developer, Operator, and Scrum Master tracking SRE onboarding in JIRA</li>
+                <li>Experienced in the architecture and engineering of secure and reliable hybrid cloud-oriented solutions between (AWS & On-Prem) leveraging the DevSecOps paradigm (i.e. Terraform, Docker, Kubernetes, etc.)</li>
+                <li>Capability of solving complex problem challenges with an automation-first approach Cloud Platforms Work closely with development teams to diagnose performance, reliability, and security issues in applications and system design</li>
+                <li>Using Helm Chart Museum for Production Deployments on EKS using multiple deployment strategies</li>
+                <li>Working within small highly collaborative Agile teams with their short-release cycles</li>
+                <li>Lead in the design, development, and implementation of the infrastructure with Skafflod to increase the reliability and agility of the system.</li>
+                <li>Delegate tasks to the 3 members of the design team and provide counsel on all aspects of the project</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Senior DevOps Engineer</h4>
+              <h5>2018 - 2021</h5>
+              <p><em>HCL Technology Pvt Ltd, Noida, IN</em></p>
+              <ul>
+                <li>Defined and scoped cloud and platform consulting engagements</li>
+                <li>Conducted workshops with clients to assess cloud and platform requirements</li>
+                <li>Presented findings and recommendations to clients</li>
+                <li>Implemented cloud and platform innovative solutions for example running compute workload on green energy</li>
+                <li>Developing ML based planform to run Tensorflow workloads</li>
+                <li>Finding new solution on cloud AWS, GCP to automate remidiate compliance issues Monitored and managed cloud and platform implementations for clients</li>
+                <li>Devloping serverless framework for different verticals</li>
+                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>DevOps Engineer</h4>
+              <h5>2017 - 2018</h5>
+              <p><em>ATEM CORPS Pvt Ltd, Chennai, IN</em></p>
+              <ul>
+                <li>Experience in using Version Control Tools like bitbucket and Git</li>
+                <li>Experience in working on AWS and its services like AWS IAM, VPC, EC2, RDS, S3, ELB, Auto Scaling, Route 53, Cloud Watch, Cloud Trail, SQS, SNS,Code </li>
+                <li>Commit,Code Deploy,Code Build Code Pipeline and create custom sized VPC, subnets, NAT, EC2 instances, ELB and Securitygroups</li>
+                <li>Managed Data backup and archiving on AWS using S3 </li>
+                <li>Served as a project team lead on large sized technical projects and provided solutions to technical problems of moderate scope and complexity requiring evaluation</li>
+                <li>Integrated multiple Partner to connect Payments bank API</li>
+                <li>Extensive experience with software builds tools like Apache Maven, Apache Ant</li>
+                <li>Extensive experience in automation using UNIX Shell scripting</li>
+                <li>Hands on experience in upgrading servers using RPM, Apt-get and Yum package installer</li>
+                <li>Experience and understanding of Application Infrastructure (servers, load balancers, web application firewalls)</li>
+                <li>Designed end to end automation of infrastructure and continuous delivery of the applications by integrating scripts, Jenkins and Ansible Playbook Designing custom workflows for automating the infrastructure.</li>
+
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>System Administrator</h4>
+              <h5>2016 - 2016</h5>
+              <p><em>Aspen Communcations Pvt Ltd, Gurugram, IN</em></p>
+              <ul>
+                <li>Develop and maintain configuration management solutions to automate the task by using puppet.</li>
+                <li>Tuning performance and ensure high availability of infrastructure.</li>
+                <li>Design and develop infrastructure monitoring and reporting tools for Linux, network and security.</li>
+                <li>Monitor network communication and setup security policies (e.g. firewalls and intrusion detection systems.</li>
+                <li>Focused on automation integration of monitoring system integrated with configuration management</li>
+                <li>Track vulnerabilities and apply appropriate patches and upgrades.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Senior Linux System Engineer</h4>
+              <h5>2015 - 2016</h5>
+              <p><em>Chi Networks Pvt Ltd, Noida, IN</em></p>
+              <ul>
+                <li>Providing support and monitoring all location network for Pepsico.</li>
+                <li>Manage FTP server, mail sever and monitoring server</li>
+                <li>Writing Bash script to install web server</li>
+                <li>LAMP stack and updating OS patches on scheduled basis</li>
+                <li>Taking backup for servers and working 24X7 Support model</li>
+
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>System Administrator</h4>
+              <h5>2014 - 2015</h5>
+              <p><em>Progression Infonet Pvt Ltd, Gurugram, IN</em></p>
+              <ul>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>System Administrator</h4>
+              <h5>2011 - 2014</h5>
+              <p><em>INS E Solution Pvt Ltd, Delhi, IN</em></p>
+              <ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- 
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-binoculars"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-brightness-high"></i></div>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  -->
+    <!--
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Mayank Koli</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>End Testimonials Section
+    -->
+    <!-- ======= Contact Section ======= -->
+    
+    <section id="Projects" class="resume">
+      <div class="container">
+        <div class="section-title">
+          <h2>Projects</h2>
           <li>Desgin the architecture of Deploying apps on serverless resources using ARM templates and ADO Pipeline on Cloud @ HCL technology</li>
           <li>Designed Multiple Automation solutions on Cloud using tools i.e. python, boto3, lambda, cloud event, SNS, could watch</li>
-          <li>Created Step functions for AWS Resource which will run in lambda like Jenkins pipeline to run stages </li>
+          <li>Created Step functions for AWS Resource which will run in lambda like Jenkins pipeline to run stages</li>
           <li>Designed program to detect stable & moving images using OpenCV modules using cascading templates</li>
           <li>Design and implement CICD pipelines to automate the Application lifecycle @ Bharti Airtel</li>
           <li>Migrated On-Prem VMs to AWS Cloud using terraform @ Amex</li>
-        </ul>
-    </div>
-    <hr>
-    <h2>Skills</h2>
-      <table border="2" class="center">
-        <tr>
-          <td>Programing Language Skills</td>
-          <td>Python, Bash</td>
-        </tr>
-        <tr>
-          <td>Web Development Skills</td>
-          <td>HTML</td>
-        </tr>
-        <tr>
-          <td>Cloud Platforms</td>
-          <td>Open stack, Hybrid Cloud, AWS, GCP and Azure</td>
-        </tr>
-        <tr>
-          <td>IAAC</td>
-          <td>Packer, Terrafrom, Azure Resource Management</td>
-        </tr>
-        <tr>
-          <td>Containerization</td>
-          <td>Dockers & Kubernetes</td>
-        </tr>
-        <tr>
-          <td>Database</td>
-          <td>MySQL, PostgreSQL, Nosql</td>
-        </tr>
-        <tr>
-          <td>Automation & DevOps Tools</td>
-          <td>Puppet/Ansible, GIT, Jenkins, Azure DevOPs, KVM, Web Servers (Apache, Nginx), Jmeter, Helm Chart Museum, Aws-cli/boto3</td>
-        </tr>
-        <tr>
-          <td>Monitoring</td>
-          <td>Splunk, Nagios, ELK, Prometheus & Grafana</td>
-        </tr>
-        <tr>
-          <td>Network</td>
-          <td>AWS CloudFront, Akamai</td>
-        </tr>
+          <li>Passionate cloud infra and containerization with 10+ years of experience working in platform modernization, technology integration, solution development, and process improvement initiatives </li>
+        </div>
+      </div>
+    </section>
 
-    </table>
-    <hr>
-    <h2>Work Experience</h2>
-      <table border="2" class="center">
-        <tr>
-          <th>Dates</th>
-          <th>Roles and Responsiblities</th>
-        </tr>
-        <tr>
-          <td>Apr-2021 - Current</td>
-          <td><a href="experience.html">Cognizant Softvision Pvt Ltd</a></td>
-        </tr>
-        <tr>
-          <td>Jul-2018 - Apr-2021</td>
-          <td><a href="experience.html">HCL Technologies Pvt Ltd</a></td>
-        </tr>
-        <tr>
-          <td>Feb 2017 - May 2018</td>
-          <td><a href="experience.html">Atem Corp Pvt Ltd</a></td>
-        </tr>
-        <tr>
-          <td>Aug 2016 –Dec 2016</td>
-          <td><a href="experience.html">Aspen Communication Pvt. Ltd.</a></td>
-        </tr>
-        <tr>
-          <td>Jan 2015 - Aug 2016</td>
-          <td><a href="experience.html">CHI Networks Pvt. Ltd.</a></td>
-        </tr>
-        <tr>
-          <td>Sept 2014 - Jan 2015</td>
-          <td><a href="experience.html">Progression Infonet Pvt. Ltd.</a></td>
-        </tr>
-        <tr>
-          <td>Mar 2011 - Sept 2014</td>
-          <td><a href="experience.html">INS E Solution Pvt. Ltd.</a></td>
-        </tr>
-        
-      </table>
-    <hr>
-    <div class="middle-container">
-      <h2>Certifications</h2>
-        <ul>
-          <li>AWS Certified Solutions Architect</li>
-          <li>GCP Associate Cloud Engineer</li>
-          <li>HashiCorp Terraform Associates</li>
-          <li>Certified Kubernetes Application (CKA)</li>
-          <li>Certified Kubernetes Application Developer (CKAD)</li>
-          <li>Certified Kubernetes Security (CKS)</li>
-          <li>Linux Foundation: GitOps</li>
-          <li>RHCE</li>
-          <li>RHCVA</li>
-          <li>MCSA</li>
-          <li>Jenkins Training</li>
-        </ul>
-    </div>
-    <hr>
-    <div class="bottom-container" id="contactBtn">
-      <h2>Contact Me</a></h2>
-        <form action="contactme.html">
-          <button id="btn" class="btn">
-            Click
-          </button>
-        </form>
-
-    </div>
-    <hr>
     
-  </body>
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Please send message to get connect.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Pitampura, New Delhi 110034, India</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>mayank.c.koli@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 8826634734</p>
+              </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1349.4117953113166!2d77.1344508453286!3d28.686489828222808!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1676819131339!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
-<script src="scripts/index.js"></script>
