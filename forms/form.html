@@ -1,0 +1,23 @@
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
+
+<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeEc3AMpw_wOxO-3-zNWuipIqKcO5i9UjaM19l0qzepW69apw/viewform" target="hidden_iframe" onsubmit="submitted=true;">
+  First name:<br>
+  <input type="text" name="entry.378936205" id="entry.378936205"><br>
+  Email :<br>
+  <input type="text" name="entry.610889538" id="entry.610889538">
+  Subject :<br>
+  <input type="text" name="entry.1544286782" id="entry.1544286782"><br>
+  Message :<br>
+  <input type="text" name="entry.340823927" id="entry.340823927">
+  <input type="submit" value="Submit">
+</forms>
+
+rk
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
