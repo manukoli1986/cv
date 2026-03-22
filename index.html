@@ -16,6 +16,7 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -27,6 +28,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Dark Terminal Theme -->
+  <link href="assets/css/dark-theme.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: iPortfolio - v3.10.0
@@ -52,7 +55,6 @@
           <a href="https://github.com/manukoli1986" class="github"><i class="bx bxl-github"></i></a>
           <a href="https://www.linkedin.com/in/mayankckoli/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
           <a href="https://medium.com/@manukoli1986" class="medium"><i class="bx bxl-medium"></i></a>
-          <a href="assets/attachments/Mayank_Koli.pdf" target="_blank">CV</a>
         </div>
       </div>
 
@@ -71,9 +73,25 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Mayank Koli</h1>
-      <p>I'm <span class="typed" data-typed-items="Senior DevOps & Cloud Engineer, Cloud & DevSecOps Geek, Solution Architect, Developer, Freelancer"></span></p>
+    <div class="terminal-container" data-aos="fade-in">
+      <div class="terminal-header">
+        <span class="terminal-dot red"></span>
+        <span class="terminal-dot yellow"></span>
+        <span class="terminal-dot green"></span>
+        <span class="terminal-title">mayank@cloud ~ portfolio</span>
+      </div>
+      <div class="terminal-body" id="terminal-output">
+        <div><span class="prompt">mayank@cloud:~$</span> <span class="command">whoami</span></div>
+        <div class="output"><span class="highlight">Mayank Koli</span> — Senior Site Reliability Engineer @ Insight</div>
+        <div style="margin-top:8px"><span class="prompt">mayank@cloud:~$</span> <span class="command">cat skills.txt</span></div>
+        <div class="output"><span class="highlight">Kubernetes</span> | <span class="highlight">AWS</span> | <span class="highlight">Terraform</span> | <span class="highlight">Python</span> | <span class="highlight">Docker</span> | <span class="highlight">Azure</span></div>
+        <div style="margin-top:8px"><span class="prompt">mayank@cloud:~$</span> <span class="command">echo $CURRENT_ROLE</span></div>
+        <div class="output" id="typed-output"></div>
+      </div>
+      <div class="terminal-input-line" style="padding: 0 20px 16px 20px;">
+        <span class="prompt">mayank@cloud:~$</span>
+        <input type="text" class="terminal-input" id="hero-terminal-input" placeholder="Type a command... (try 'help')" autocomplete="off">
+      </div>
     </div>
   </section><!-- End Hero -->
 
@@ -85,9 +103,9 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p>I am a passionate technology enthusiast who loves working on new emerging technologies that helps solve day to day problems and also help automate many of the common repetitive activities thereby transforming business problems into actionable solutions.
-            With 10+ Years of technology experience with expertise in architecting, designing and implementing solutions by utilising latest cloud native technologies that meet client and businesses objectives. Specializes in building, scaling and managing highly available web services with key interest in Cloud Service Platform, Security, Automation, Provisioning, High Availability, Orchestration, Container Technologies, Disaster Recovery, Monitoring, Centralize Logging, Configuration Management, CI/CD, Version management and troubleshooting. Experienced in working with enterprise customers worldwide. 
-            Passionate to work in multiple customer acquisitions across the organisation.</p>
+          <p>I am a passionate technology enthusiast who loves working on new emerging technologies that help solve day-to-day problems and automate common repetitive activities, transforming business challenges into actionable solutions.
+            With 10+ years of technology experience, I specialize in architecting, designing, and implementing solutions using the latest cloud-native technologies to meet client and business objectives. My expertise spans building, scaling, and managing highly available web services — covering Cloud Platforms, Security, Automation, Orchestration, Container Technologies, Disaster Recovery, Monitoring, CI/CD, and Configuration Management. Experienced working with enterprise customers worldwide.</p>
+          <p style="margin-top: 12px; font-weight: 500; color: var(--accent-cyan, #00e5ff);">🚀 <strong>Open to new opportunities!</strong> I'm actively exploring senior-level DevOps, SRE, Cloud Architect, and Platform Engineering roles where I can drive cloud transformation, build resilient infrastructure, and lead high-performing teams. Let's connect and build something great together.</p>
         </div>
 
         <div class="row">
@@ -179,102 +197,40 @@ Continuous Integration tools.
 
         <div class="section-title">
           <h2>Skills</h2>
-          <p>I have hands on experiences on below tools......</p>
+          <p>Technologies and tools I work with daily</p>
         </div>
 
-        <div class="row skills-content">
+        <div class="skills-tags" data-aos="fade-up">
+          <div class="skill-category">Cloud & Infrastructure</div>
+          <div class="skill-tag"><i class="bx bxl-aws"></i> AWS <span class="skill-level">Expert</span></div>
+          <div class="skill-tag"><i class="bx bx-cloud"></i> Azure <span class="skill-level">Advanced</span></div>
+          <div class="skill-tag"><i class="bx bx-cloud"></i> GCP <span class="skill-level">Expert</span></div>
+          <div class="skill-tag"><i class="bx bx-code-block"></i> Terraform <span class="skill-level">Expert</span></div>
+          <div class="skill-tag"><i class="bx bx-server"></i> Linux <span class="skill-level">Expert</span></div>
 
-          <div class="col-lg-6" data-aos="fade-up">
+          <div class="skill-category">Containers & Orchestration</div>
+          <div class="skill-tag"><i class="bx bxl-kubernetes"></i> Kubernetes <span class="skill-level">Expert</span></div>
+          <div class="skill-tag"><i class="bx bxl-docker"></i> Docker <span class="skill-level">Expert</span></div>
+          <div class="skill-tag"><i class="bx bx-category"></i> Helm <span class="skill-level">Advanced</span></div>
+          <div class="skill-tag"><i class="bx bx-shape-polygon"></i> Istio <span class="skill-level">Advanced</span></div>
 
-            <div class="progress">
-              <span class="skill">AWS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
+          <div class="skill-category">CI/CD & Automation</div>
+          <div class="skill-tag"><i class="bx bx-git-branch"></i> Jenkins <span class="skill-level">Expert</span></div>
+          <div class="skill-tag"><i class="bx bxl-github"></i> GitHub Actions <span class="skill-level">Advanced</span></div>
+          <div class="skill-tag"><i class="bx bx-loop"></i> Azure DevOps <span class="skill-level">Advanced</span></div>
+          <div class="skill-tag"><i class="bx bx-code-alt"></i> Ansible <span class="skill-level">Advanced</span></div>
+          <div class="skill-tag"><i class="bx bx-terminal"></i> ArgoCD / GitOps <span class="skill-level">Advanced</span></div>
 
-            <div class="progress">
-              <span class="skill">Kubernetes <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
+          <div class="skill-category">Programming</div>
+          <div class="skill-tag"><i class="bx bxl-python"></i> Python <span class="skill-level">Advanced</span></div>
+          <div class="skill-tag"><i class="bx bx-terminal"></i> Bash <span class="skill-level">Expert</span></div>
+          <div class="skill-tag"><i class="bx bxl-javascript"></i> JavaScript <span class="skill-level">Intermediate</span></div>
 
-            <div class="progress">
-              <span class="skill">Python Programming <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="progress">
-              <span class="skill">Linux <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">GCP <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Terraform IAAC <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Azure DevOps <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="row skills-content mt-4">
-
-          <div class="col-lg-6" data-aos="fade-up">
-            <div class="progress">
-              <span class="skill">ELK Stack <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Grafana &amp; Prometheus <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="progress">
-              <span class="skill">Docker <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Jenkins / CI-CD <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-
+          <div class="skill-category">Monitoring & Observability</div>
+          <div class="skill-tag"><i class="bx bx-line-chart"></i> Grafana <span class="skill-level">Expert</span></div>
+          <div class="skill-tag"><i class="bx bx-pulse"></i> Prometheus <span class="skill-level">Expert</span></div>
+          <div class="skill-tag"><i class="bx bx-search-alt"></i> ELK Stack <span class="skill-level">Advanced</span></div>
+          <div class="skill-tag"><i class="bx bx-bar-chart-alt-2"></i> Datadog <span class="skill-level">Advanced</span></div>
         </div>
 
       </div>
@@ -288,7 +244,6 @@ Continuous Integration tools.
           <h2>Resume</h2> 
           <p>Passionate cloud infra and containerization with 10+ years of experience working in platform modernization, technology integration, solution development, and process improvement initiatives. 
             Strategist for cloud solutions (Private, GCP, AWS, Azure, Hybrid) Carrying rich experience of Implementing and Migration planning for true world IT scenarios. Well-developed knowledge and understanding of the global cloud infrastructure marketplace. </p>
-            <a href="assets/attachments/Mayank_Koli.pdf" target="_blank">Click To Download</a>
         </div>
 
         <div class="row">
@@ -296,7 +251,8 @@ Continuous Integration tools.
             <h3 class="resume-title">Summary</h3>
             <div class="resume-item pb-0">
               <h4>Mayank Koli</h4>
-              <p><em></em></p>
+              <p><em>Results-driven Senior SRE &amp; Cloud Engineer with 10+ years of experience in designing, automating, and scaling cloud-native infrastructure. Proven track record in Kubernetes, multi-cloud environments (AWS/Azure/GCP), CI/CD pipelines, and team leadership. Passionate about building reliable, secure systems at scale.</em></p>
+              <p style="margin-top: 8px; font-style: italic; color: var(--accent-green, #00ff88);">✨ Actively seeking new opportunities — open to Senior DevOps, SRE, Cloud Architect &amp; Platform Engineering roles.</p>
               <ul>
                 <li>New Delhi, India</li>
                 <li>+91-8826634734</li>
@@ -306,7 +262,13 @@ Continuous Integration tools.
 
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
-              <h4>Licenses &amp; Certifications</h4>
+              <h4>Bachelor of Commerce</h4>
+              <h5>2007 - 2011</h5>
+              <p><em>Delhi University, New Delhi</em></p>
+            </div>
+
+            <h3 class="resume-title">Licenses &amp; Certifications</h3>
+            <div class="resume-item">
               <ul>
                 <li>Measuring and Assessing AI Risks — Skillsoft (Dec 2025)</li>
                 <li>AI Change Management: Leading the Transformation — Skillsoft (Dec 2025)</li>
@@ -331,11 +293,6 @@ Continuous Integration tools.
                 <li>Red Hat Certified Virtualization Administrator — Red Hat (Mar 2012)</li>
                 <li>RHCE — Red Hat (Feb 2009)</li>
               </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Commerce</h4>
-              <h5>2007 - 2011</h5>
-              <p><em>Delhi University, New Delhi</em></p>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
@@ -661,6 +618,33 @@ Continuous Integration tools.
 
   </main><!-- End #main -->
 
+  <!-- ======= AI Chat Widget ======= -->
+  <button class="ai-chat-toggle" id="ai-chat-toggle" aria-label="Chat with AI assistant">
+    <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+  </button>
+
+  <div class="ai-chat-window" id="ai-chat-window">
+    <div class="ai-chat-header">
+      <div class="ai-chat-header-left">
+        <div class="ai-avatar">🤖</div>
+        <div>
+          <h4>Mayank's AI Assistant</h4>
+          <div class="status">● Online</div>
+        </div>
+      </div>
+      <button class="ai-chat-close" id="ai-chat-close">&times;</button>
+    </div>
+    <div class="ai-chat-messages" id="ai-chat-messages">
+      <div class="ai-msg bot">Hi! I'm Mayank's AI assistant. Ask me anything about his experience, skills, certifications, or projects. Try: <em>"What certifications does Mayank have?"</em></div>
+    </div>
+    <div class="ai-chat-input-area">
+      <input type="text" class="ai-chat-input" id="ai-chat-input" placeholder="Ask about Mayank..." autocomplete="off">
+      <button class="ai-chat-send" id="ai-chat-send">
+        <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+      </button>
+    </div>
+  </div>
+
 
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -722,6 +706,216 @@ Continuous Integration tools.
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- ======= Terminal CLI + AI Chatbot ======= -->
+  <script>
+  (function() {
+    // ===== TERMINAL CLI =====
+    var typedEl = document.getElementById('typed-output');
+    var roles = ['Senior DevOps & Cloud Engineer', 'Cloud & DevSecOps Geek', 'Solution Architect', 'SRE @ Insight', 'Freelancer'];
+    var roleIdx = 0, charIdx = 0, deleting = false;
+
+    function typeRole() {
+      var current = roles[roleIdx];
+      if (!deleting) {
+        typedEl.innerHTML = '<span class="highlight">' + current.substring(0, charIdx + 1) + '</span><span class="cursor"></span>';
+        charIdx++;
+        if (charIdx === current.length) {
+          deleting = true;
+          setTimeout(typeRole, 2000);
+          return;
+        }
+        setTimeout(typeRole, 60);
+      } else {
+        typedEl.innerHTML = '<span class="highlight">' + current.substring(0, charIdx) + '</span><span class="cursor"></span>';
+        charIdx--;
+        if (charIdx < 0) {
+          deleting = false;
+          charIdx = 0;
+          roleIdx = (roleIdx + 1) % roles.length;
+          setTimeout(typeRole, 400);
+          return;
+        }
+        setTimeout(typeRole, 30);
+      }
+    }
+    typeRole();
+
+    // Terminal commands
+    var terminalCommands = {
+      help: 'Available commands: <span class="highlight">whoami, skills, experience, certs, contact, projects, status, clear</span>',
+      whoami: '<span class="highlight">Mayank Koli</span> — Senior SRE | 10+ years in Cloud & DevOps | <span class="highlight">Open to new opportunities!</span>',
+      status: '🚀 <span class="highlight">Actively looking</span> for Senior DevOps / SRE / Cloud Architect / Platform Engineering roles. Let\'s connect!',
+      skills: '<span class="highlight">Kubernetes</span> | <span class="highlight">AWS</span> | <span class="highlight">Azure</span> | <span class="highlight">GCP</span> | <span class="highlight">Terraform</span> | <span class="highlight">Docker</span> | <span class="highlight">Python</span> | <span class="highlight">Jenkins</span> | <span class="highlight">Ansible</span> | <span class="highlight">Grafana</span> | <span class="highlight">Prometheus</span> | <span class="highlight">ELK</span>',
+      experience: '<span class="highlight">Insight</span> (2023-Present) → <span class="highlight">Cognizant</span> (2021-2023) → <span class="highlight">HCL</span> (2018-2021) → <span class="highlight">Atem Corp</span> (2017-2018)',
+      certs: '<span class="highlight">CKS</span> | <span class="highlight">CKA</span> | <span class="highlight">CKAD</span> | <span class="highlight">AWS SA</span> | <span class="highlight">GCP ACE</span> | <span class="highlight">Terraform Associate</span> | <span class="highlight">RHCE</span> + 15 more',
+      contact: 'Email: <span class="highlight">mayank.c.koli@gmail.com</span> | Phone: <span class="highlight">+91 8826634734</span>',
+      projects: 'Ecommerce Project | Serverless ARM/ADO | AWS Step Functions | OpenCV Detection | CI/CD Pipelines',
+      clear: '__CLEAR__'
+    };
+
+    var heroInput = document.getElementById('hero-terminal-input');
+    var termOutput = document.getElementById('terminal-output');
+
+    if (heroInput) {
+      heroInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+          var cmd = this.value.trim().toLowerCase();
+          this.value = '';
+          if (!cmd) return;
+
+          if (cmd === 'clear') {
+            termOutput.innerHTML = '';
+            return;
+          }
+
+          var line = document.createElement('div');
+          line.style.marginTop = '8px';
+          line.innerHTML = '<span class="prompt">mayank@cloud:~$</span> <span class="command">' + cmd.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</span>';
+          termOutput.appendChild(line);
+
+          var response = terminalCommands[cmd] || 'Command not found. Type <span class="highlight">help</span> for available commands.';
+          var outLine = document.createElement('div');
+          outLine.className = 'output';
+          outLine.innerHTML = response;
+          termOutput.appendChild(outLine);
+
+          termOutput.scrollTop = termOutput.scrollHeight;
+        }
+      });
+    }
+
+    // ===== AI CHATBOT =====
+    var resumeData = {
+      name: 'Mayank Koli',
+      title: 'Senior Site Reliability Engineer',
+      company: 'Insight',
+      location: 'New Delhi, India (Remote)',
+      experience: '10+ years',
+      email: 'mayank.c.koli@gmail.com',
+      phone: '+91 8826634734',
+      website: 'https://manukoli1986.github.io/cv',
+      skills: ['AWS', 'Azure', 'GCP', 'Kubernetes', 'Docker', 'Terraform', 'Python', 'Bash', 'Jenkins', 'GitHub Actions', 'Azure DevOps', 'Ansible', 'ArgoCD', 'Helm', 'Istio', 'Grafana', 'Prometheus', 'ELK Stack', 'Datadog', 'Linux', 'JavaScript'],
+      certifications: ['CKS - Certified Kubernetes Security Specialist', 'CKA - Certified Kubernetes Administrator', 'CKAD - Certified Kubernetes Application Developer', 'AWS Certified Solutions Architect - Associate', 'Google Cloud Associate Cloud Engineer', 'HashiCorp Terraform Associate', 'OPA Policy Authoring - Styra', 'Kubecost Technical Certification', 'Introduction to GitOps - Linux Foundation', 'Jenkins Administration & Automation - Xebia', 'Red Hat Certified Virtualization Administrator', 'RHCE - Red Hat Certified Engineer', 'AI/ML certifications from Skillsoft (2025)', 'Datadog APM & Observability certifications'],
+      workHistory: [
+        { role: 'Senior Site Reliability Engineer', company: 'Insight', period: 'Aug 2023 - Present', details: 'AWS, Azure DevOps, GitHub Actions, Istio, Kubernetes, CI/CD, Team Leadership' },
+        { role: 'Senior Associate', company: 'Cognizant Softvision', period: 'Apr 2021 - Aug 2023', details: 'Cloud infrastructure (AWS/Azure), Terraform, Docker, Kubernetes, Python' },
+        { role: 'Senior DevOps Engineer', company: 'HCL Technology', period: 'Jul 2018 - Apr 2021', details: 'Kubernetes, Helm, AWS Lambda, DevSecOps, ELK, Microservices' },
+        { role: 'DevOps Engineer', company: 'Atem Corp', period: 'Feb 2017 - May 2018', details: 'Jenkins, ELK, Docker, Puppet, CI/CD, Python automation' },
+        { role: 'System Administrator', company: 'Aspen Communication', period: 'Aug 2016 - Dec 2016', details: 'AWS, Magento, LAMP, WAF, Cyberoam Firewall' }
+      ],
+      projects: ['Ecommerce Project', 'Serverless deployment with ARM templates and ADO Pipeline', 'AWS Step Functions for Lambda pipelines', 'OpenCV image detection program', 'CI/CD pipelines for application lifecycle automation', 'On-Prem VM migration to AWS Cloud using Terraform'],
+      github: 'https://github.com/manukoli1986',
+      linkedin: 'https://www.linkedin.com/in/mayankckoli/',
+      medium: 'https://medium.com/@manukoli1986'
+    };
+
+    function getAIResponse(question) {
+      var q = question.toLowerCase();
+
+      if (q.match(/hi|hello|hey|namaste/)) {
+        return "Hello! I'm Mayank's AI assistant. I can tell you about his skills, experience, certifications, projects, or contact info. What would you like to know?";
+      }
+      if (q.match(/skill|tech|tool|stack|what.*(know|use|work)/)) {
+        return "Mayank is skilled in: **" + resumeData.skills.join(', ') + "**. His top areas are Cloud (AWS/Azure/GCP), Containers (Kubernetes/Docker), and CI/CD automation.";
+      }
+      if (q.match(/cert|license|qualified|credential/)) {
+        return "Mayank holds **" + resumeData.certifications.length + " certifications** including: " + resumeData.certifications.slice(0, 6).join(', ') + ", and more. He has 3 Kubernetes certs (CKS, CKA, CKAD) plus cloud, IaC, and AI/ML credentials.";
+      }
+      if (q.match(/experience|work|job|career|company|role|history/)) {
+        var exp = resumeData.workHistory.map(function(w) { return '• **' + w.role + '** at ' + w.company + ' (' + w.period + ')'; }).join('\n');
+        return "Mayank has " + resumeData.experience + " of experience:\n" + exp;
+      }
+      if (q.match(/current|now|present|today|doing/)) {
+        return "Mayank is currently working as a **Senior Site Reliability Engineer at Insight** (Aug 2023 - Present), based remotely from New Delhi. He works with AWS, Azure DevOps, GitHub Actions, Istio, Kubernetes, and leads teams.";
+      }
+      if (q.match(/project/)) {
+        return "Key projects: " + resumeData.projects.join(', ') + ".";
+      }
+      if (q.match(/contact|email|phone|reach|hire|connect/)) {
+        return "You can reach Mayank at:\n📧 " + resumeData.email + "\n📞 " + resumeData.phone + "\n🔗 [LinkedIn](" + resumeData.linkedin + ")\n🐙 [GitHub](" + resumeData.github + ")";
+      }
+      if (q.match(/education|degree|study|university|college/)) {
+        return "Mayank holds a **Bachelor of Commerce** from Delhi University (2007-2011). His expertise comes from 10+ years of hands-on industry experience and 22+ professional certifications.";
+      }
+      if (q.match(/kubernetes|k8s|container/)) {
+        return "Mayank is a **Kubernetes expert** with 3 certifications: CKS (Security), CKA (Administrator), and CKAD (Application Developer). He has extensive experience with EKS, Helm, Istio service mesh, and container orchestration at scale.";
+      }
+      if (q.match(/aws|amazon|cloud/)) {
+        return "Mayank is **AWS Certified Solutions Architect** with deep experience in EC2, S3, VPC, RDS, Lambda, EKS, CloudWatch, IAM, WAF, and infrastructure automation using Terraform.";
+      }
+      if (q.match(/terraform|iac|infrastructure.as.code/)) {
+        return "Mayank is a **HashiCorp Certified Terraform Associate** and uses Terraform extensively for Infrastructure as Code across AWS, Azure, and GCP. He also works with ARM templates.";
+      }
+      if (q.match(/who|about|tell|intro|summary/)) {
+        return "**Mayank Koli** is a Senior SRE with 10+ years in Cloud & DevOps. He specializes in Kubernetes, AWS/Azure/GCP, Terraform, CI/CD, and monitoring. He holds 22+ certifications and is passionate about automation and cloud-native technologies. He's currently **open to new opportunities** in senior DevOps, SRE, and Cloud Architecture roles.";
+      }
+      if (q.match(/hire|avail|open|opportunit|looking|status|freelance|relocat/)) {
+        return "Yes! Mayank is **actively open to new opportunities**. He's looking for Senior DevOps Engineer, SRE, Cloud Architect, or Platform Engineering roles. He's open to remote, hybrid, or relocation options. Feel free to reach out at **mayank.c.koli@gmail.com** or connect on [LinkedIn](" + resumeData.linkedin + ").";
+      }
+      return "I can help with questions about Mayank's **skills**, **experience**, **certifications**, **projects**, **education**, , **availability**, or **contact info**. What would you like to know?";
+    }
+
+    // Simple markdown-like formatting
+    function formatResponse(text) {
+      return text
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/\n/g, '<br>')
+        .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+    }
+
+    var chatToggle = document.getElementById('ai-chat-toggle');
+    var chatWindow = document.getElementById('ai-chat-window');
+    var chatClose = document.getElementById('ai-chat-close');
+    var chatMessages = document.getElementById('ai-chat-messages');
+    var chatInput = document.getElementById('ai-chat-input');
+    var chatSend = document.getElementById('ai-chat-send');
+
+    chatToggle.addEventListener('click', function() {
+      chatWindow.classList.toggle('open');
+      if (chatWindow.classList.contains('open')) {
+        chatInput.focus();
+      }
+    });
+    chatClose.addEventListener('click', function() {
+      chatWindow.classList.remove('open');
+    });
+
+    function sendChatMessage() {
+      var text = chatInput.value.trim();
+      if (!text) return;
+
+      // User message
+      var userMsg = document.createElement('div');
+      userMsg.className = 'ai-msg user';
+      userMsg.textContent = text;
+      chatMessages.appendChild(userMsg);
+      chatInput.value = '';
+
+      // Typing indicator
+      var typing = document.createElement('div');
+      typing.className = 'ai-typing';
+      typing.innerHTML = '<span></span><span></span><span></span>';
+      chatMessages.appendChild(typing);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+
+      // Simulate AI response delay
+      setTimeout(function() {
+        chatMessages.removeChild(typing);
+        var botMsg = document.createElement('div');
+        botMsg.className = 'ai-msg bot';
+        botMsg.innerHTML = formatResponse(getAIResponse(text));
+        chatMessages.appendChild(botMsg);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }, 600 + Math.random() * 800);
+    }
+
+    chatSend.addEventListener('click', sendChatMessage);
+    chatInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') sendChatMessage();
+    });
+  })();
+  </script>
 
 </body>
 
