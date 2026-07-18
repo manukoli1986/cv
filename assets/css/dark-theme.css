@@ -4,22 +4,31 @@
 
 /* ---------- Color Variables ---------- */
 :root {
-  --bg-primary: #0a0e17;
-  --bg-secondary: #111827;
-  --bg-card: #1a1f2e;
-  --bg-card-hover: #232939;
-  --text-primary: #e2e8f0;
-  --text-secondary: #94a3b8;
-  --accent: #00e5ff;
-  --accent-dim: rgba(0, 229, 255, 0.15);
-  --accent-glow: rgba(0, 229, 255, 0.3);
-  --accent-green: #00ff88;
+  --bg-primary: #0b1220;
+  --bg-secondary: #101a2c;
+  --bg-card: #152238;
+  --bg-card-hover: #1c2b47;
+  --text-primary: #e8edf5;
+  --text-secondary: #9fb0c7;
+  --accent: #60a5fa;
+  --accent-dim: rgba(96, 165, 250, 0.12);
+  --accent-glow: rgba(96, 165, 250, 0.25);
+  --accent-green: #93c5fd;
   --accent-purple: #a78bfa;
-  --border-color: #1e293b;
-  --terminal-bg: #0d1117;
-  --terminal-border: #30363d;
-  --glass-bg: rgba(17, 24, 39, 0.7);
-  --glass-border: rgba(0, 229, 255, 0.1);
+  --border-color: #223049;
+  --terminal-bg: #0d1526;
+  --terminal-border: #2a3b5a;
+  --glass-bg: rgba(16, 26, 44, 0.7);
+  --glass-border: rgba(96, 165, 250, 0.1);
+}
+
+/* Professional typeface */
+body, p, li, .nav-menu a, .section-title p {
+  font-family: "Inter", "Open Sans", sans-serif;
+}
+h1, h2, h3, h4, h5 {
+  font-family: "Inter", "Raleway", sans-serif;
+  letter-spacing: -0.01em;
 }
 
 /* ---------- Global Dark Overrides ---------- */
