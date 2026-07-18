@@ -109,34 +109,64 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+  <section id="hero">
     <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
     <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
     <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
-    <div class="terminal-container" data-aos="fade-in">
-      <div class="terminal-header">
-        <span class="terminal-dot red"></span>
-        <span class="terminal-dot yellow"></span>
-        <span class="terminal-dot green"></span>
-        <span class="terminal-title">mayank@cloud ~ portfolio</span>
+
+    <div class="hero-grid">
+
+      <!-- Left: headline + value prop -->
+      <div class="hero-intro" data-aos="fade-right">
+        <span class="hero-eyebrow">Cloud &amp; AI Solutions Architect · Senior SRE</span>
+        <h1 class="hero-headline">I build <span class="grad-text">reliable cloud platforms</span> and <span class="grad-text">AI&#8209;powered automation</span> that scale.</h1>
+        <p class="hero-sub">10+ years designing, automating and running infrastructure for enterprises —
+        from 60,000-seat booking spikes to multi-cloud Kubernetes platforms. Available for
+        freelance projects, consulting, and senior roles.</p>
+        <div class="hero-cta">
+          <a href="mailto:mayank.c.koli@gmail.com?subject=Project%20enquiry%20via%20mayankkoli.com" class="btn-cta btn-cta-solid"><i class="bx bx-envelope"></i> Hire Me</a>
+          <a href="assets/attachments/Mayank_Koli.pdf" download class="btn-cta"><i class="bx bx-download"></i> Download CV</a>
+          <a href="https://www.linkedin.com/in/mayankckoli/" target="_blank" rel="noopener" class="btn-cta"><i class="bx bxl-linkedin"></i> LinkedIn</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><strong>10+</strong><span>years</span></div>
+          <div class="hero-stat"><strong>22+</strong><span>certifications</span></div>
+          <div class="hero-stat"><strong>3</strong><span>clouds</span></div>
+          <div class="hero-stat"><strong>5K</strong><span>concurrent users</span></div>
+        </div>
       </div>
-      <div class="terminal-body" id="terminal-output">
-        <div><span class="prompt">mayank@cloud:~$</span> <span class="command">whoami</span></div>
-        <div class="output"><span class="highlight">Mayank Koli</span> — Senior Site Reliability Engineer @ Insight</div>
-        <div style="margin-top:8px"><span class="prompt">mayank@cloud:~$</span> <span class="command">cat skills.txt</span></div>
-        <div class="output"><span class="highlight">Kubernetes</span> | <span class="highlight">AWS</span> | <span class="highlight">Terraform</span> | <span class="highlight">Python</span> | <span class="highlight">Docker</span> | <span class="highlight">Azure</span></div>
-        <div style="margin-top:8px"><span class="prompt">mayank@cloud:~$</span> <span class="command">echo $CURRENT_ROLE</span></div>
-        <div class="output" id="typed-output"></div>
+
+      <!-- Right: interactive terminal + floating tool chips -->
+      <div class="hero-visual" data-aos="fade-left">
+        <div class="float-chip chip-1"><i class="bx bxl-aws"></i> AWS</div>
+        <div class="float-chip chip-2"><i class="bx bxl-kubernetes"></i> Kubernetes</div>
+        <div class="float-chip chip-3"><i class="bx bx-code-block"></i> Terraform</div>
+        <div class="float-chip chip-4"><i class="bx bx-brain"></i> Claude AI</div>
+        <div class="float-chip chip-5"><i class="bx bxl-docker"></i> Docker</div>
+        <div class="float-chip chip-6"><i class="bx bxl-python"></i> Python</div>
+
+        <div class="terminal-container">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">mayank@cloud ~ portfolio</span>
+          </div>
+          <div class="terminal-body" id="terminal-output">
+            <div><span class="prompt">mayank@cloud:~$</span> <span class="command">whoami</span></div>
+            <div class="output"><span class="highlight">Mayank Koli</span> — Senior Site Reliability Engineer @ Insight</div>
+            <div style="margin-top:8px"><span class="prompt">mayank@cloud:~$</span> <span class="command">cat skills.txt</span></div>
+            <div class="output"><span class="highlight">Kubernetes</span> | <span class="highlight">AWS</span> | <span class="highlight">Terraform</span> | <span class="highlight">Python</span> | <span class="highlight">Docker</span> | <span class="highlight">Azure</span></div>
+            <div style="margin-top:8px"><span class="prompt">mayank@cloud:~$</span> <span class="command">echo $CURRENT_ROLE</span></div>
+            <div class="output" id="typed-output"></div>
+          </div>
+          <div class="terminal-input-line" style="padding: 0 20px 16px 20px;">
+            <span class="prompt">mayank@cloud:~$</span>
+            <input type="text" class="terminal-input" id="hero-terminal-input" placeholder="Type a command... (try 'help')" autocomplete="off">
+          </div>
+        </div>
       </div>
-      <div class="terminal-input-line" style="padding: 0 20px 16px 20px;">
-        <span class="prompt">mayank@cloud:~$</span>
-        <input type="text" class="terminal-input" id="hero-terminal-input" placeholder="Type a command... (try 'help')" autocomplete="off">
-      </div>
-    </div>
-    <div class="hero-cta" data-aos="fade-up" data-aos-delay="200" style="margin-top: 24px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center;">
-      <a href="mailto:mayank.c.koli@gmail.com?subject=Project%20enquiry%20via%20mayankkoli.com" class="btn-cta btn-cta-solid" style="padding: 10px 22px; border-radius: 6px; font-weight: 600; text-decoration: none;"><i class="bx bx-envelope"></i> Hire Me</a>
-      <a href="assets/attachments/Mayank_Koli.pdf" download class="btn-cta" style="padding: 10px 22px; border-radius: 6px; border: 1px solid var(--accent, #60a5fa); color: var(--accent, #60a5fa); font-weight: 600; text-decoration: none;"><i class="bx bx-download"></i> Download CV</a>
-      <a href="https://www.linkedin.com/in/mayankckoli/" target="_blank" rel="noopener" class="btn-cta" style="padding: 10px 22px; border-radius: 6px; border: 1px solid var(--accent, #60a5fa); color: var(--accent, #60a5fa); font-weight: 600; text-decoration: none;"><i class="bx bxl-linkedin"></i> LinkedIn</a>
+
     </div>
   </section><!-- End Hero -->
 
