@@ -1,0 +1,10 @@
+{
+  // Cloudflare Worker serving the static portfolio site.
+  // Static files (index.html, privacy.html, assets/, ...) live in the repo root,
+  // so the assets directory is ".".
+  "name": "mayankkoli-cv",
+  "compatibility_date": "2026-07-19",
+  "assets": {
+    "directory": "."
+  }
+}
