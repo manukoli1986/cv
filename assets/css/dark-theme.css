@@ -35,6 +35,46 @@ a:hover {
   color: var(--accent-green) !important;
 }
 
+/* ---------- Facts / Impact Counters ---------- */
+.facts .count-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+.facts .count-box i {
+  color: var(--accent) !important;
+}
+.facts .count-box span {
+  color: var(--text-primary) !important;
+}
+.facts .count-box p {
+  color: var(--text-secondary) !important;
+}
+.facts .count-box p strong {
+  color: var(--text-primary);
+}
+
+/* ---------- Hero CTA Buttons ---------- */
+.hero-cta .btn-cta {
+  border: 1px solid var(--accent);
+  color: var(--accent) !important;
+  transition: all 0.3s ease;
+}
+.hero-cta .btn-cta:hover {
+  color: var(--accent-green) !important;
+  border-color: var(--accent-green);
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+.hero-cta .btn-cta-solid {
+  background: var(--accent);
+  color: var(--bg-primary) !important;
+}
+.hero-cta .btn-cta-solid:hover {
+  background: var(--accent-green);
+  color: var(--bg-primary) !important;
+  border-color: var(--accent-green);
+}
+
 /* ---------- Sidebar ---------- */
 #header {
   background: var(--bg-secondary) !important;
