@@ -156,7 +156,7 @@
             <div><span class="prompt">mayank@cloud:~$</span> <span class="command">whoami</span></div>
             <div class="output"><span class="highlight">Mayank Koli</span> — Senior Site Reliability Engineer @ Insight</div>
             <div style="margin-top:8px"><span class="prompt">mayank@cloud:~$</span> <span class="command">cat skills.txt</span></div>
-            <div class="output"><span class="highlight">Kubernetes</span> | <span class="highlight">AWS</span> | <span class="highlight">Terraform</span> | <span class="highlight">Python</span> | <span class="highlight">Docker</span> | <span class="highlight">Azure</span></div>
+            <div class="output"><span class="highlight">Kubernetes</span> | <span class="highlight">AWS</span> | <span class="highlight">Terraform</span> | <span class="highlight">Go</span> | <span class="highlight">Python</span> | <span class="highlight">Docker</span> | <span class="highlight">Azure</span></div>
             <div style="margin-top:8px"><span class="prompt">mayank@cloud:~$</span> <span class="command">echo $CURRENT_ROLE</span></div>
             <div class="output" id="typed-output"></div>
           </div>
@@ -380,9 +380,9 @@ Continuous Integration tools.
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up">
             <div class="resume-item">
-              <h4>High-Concurrency Ticket Booking Platform</h4>
-              <p><em>5,000 concurrent users at ticket-open · 60,000-seat venues</em></p>
-              <p>Architected a booking system that absorbs the ticket-open spike for 60,000-seat venues: Go backends on Kubernetes, PostgreSQL with PgBouncer connection pooling, Redis for atomic seat counting, and Cloudflare at the edge. Designed queue-based admission control, load-tested the infrastructure end-to-end, and built Grafana/Prometheus observability from scratch. <span style="color: var(--text-secondary, #475569); font-size: 13px;">(Client engagement — source code private.)</span></p>
+              <h4>Naman Event Booking Platform — Yashobhoomi IICC</h4>
+              <p><em>5,000 concurrent users at ticket-open · 60,000 seats · sub-second latency</em></p>
+              <p>Engineered the high-concurrency booking system for one of India's largest convention centres. Full request path: Cloudflare WAF/CDN &rarr; DigitalOcean LB &rarr; Go backend on DOKS &rarr; PgBouncer &rarr; PostgreSQL, with Redis atomic seat counting and queue-based admission control. Load-tested end-to-end, deployed Cloudflare Zero Trust, kube-prometheus-stack with Loki, PagerDuty alerting, and n8n + AI automation for registration workflows. <span style="color: var(--text-secondary, #475569); font-size: 13px;">(Client engagement — source code private.)</span></p>
             </div>
             <div class="resume-item">
               <h4>Cloud Migration — American Express</h4>
@@ -473,6 +473,8 @@ Continuous Integration tools.
           <div class="skill-tag"><i class="bx bx-cloud"></i> GCP <span class="skill-level">Expert</span></div>
           <div class="skill-tag"><i class="bx bx-code-block"></i> Terraform <span class="skill-level">Expert</span></div>
           <div class="skill-tag"><i class="bx bx-server"></i> Linux <span class="skill-level">Expert</span></div>
+          <div class="skill-tag"><i class="bx bx-droplet"></i> DigitalOcean <span class="skill-level">Expert</span></div>
+          <div class="skill-tag"><i class="bx bx-shield-quarter"></i> Cloudflare (CDN/WAF/ZT) <span class="skill-level">Advanced</span></div>
 
           <div class="skill-category">Containers & Orchestration</div>
           <div class="skill-tag"><i class="bx bxl-kubernetes"></i> Kubernetes <span class="skill-level">Expert</span></div>
@@ -486,8 +488,10 @@ Continuous Integration tools.
           <div class="skill-tag"><i class="bx bx-loop"></i> Azure DevOps <span class="skill-level">Advanced</span></div>
           <div class="skill-tag"><i class="bx bx-code-alt"></i> Ansible <span class="skill-level">Advanced</span></div>
           <div class="skill-tag"><i class="bx bx-terminal"></i> ArgoCD / GitOps <span class="skill-level">Advanced</span></div>
+          <div class="skill-tag"><i class="bx bx-network-chart"></i> n8n Automation <span class="skill-level">Advanced</span></div>
 
           <div class="skill-category">Programming</div>
+          <div class="skill-tag"><i class="bx bx-code-curly"></i> Go <span class="skill-level">Advanced</span></div>
           <div class="skill-tag"><i class="bx bxl-python"></i> Python <span class="skill-level">Advanced</span></div>
           <div class="skill-tag"><i class="bx bx-terminal"></i> Bash <span class="skill-level">Expert</span></div>
           <div class="skill-tag"><i class="bx bxl-javascript"></i> JavaScript <span class="skill-level">Intermediate</span></div>
@@ -497,6 +501,8 @@ Continuous Integration tools.
           <div class="skill-tag"><i class="bx bx-pulse"></i> Prometheus <span class="skill-level">Expert</span></div>
           <div class="skill-tag"><i class="bx bx-search-alt"></i> ELK Stack <span class="skill-level">Advanced</span></div>
           <div class="skill-tag"><i class="bx bx-bar-chart-alt-2"></i> Datadog <span class="skill-level">Advanced</span></div>
+          <div class="skill-tag"><i class="bx bx-file-find"></i> Loki <span class="skill-level">Advanced</span></div>
+          <div class="skill-tag"><i class="bx bx-bell"></i> PagerDuty <span class="skill-level">Advanced</span></div>
         </div>
 
       </div>
@@ -1009,7 +1015,7 @@ Continuous Integration tools.
       help: 'Available commands: <span class="highlight">whoami, skills, experience, certs, contact, projects, github, linkedin, status, clear</span>',
       whoami: '<span class="highlight">Mayank Koli</span> — Senior SRE | 11+ years in Cloud & DevOps | <span class="highlight">Open to new opportunities!</span>',
       status: '🚀 <span class="highlight">Actively looking</span> for Senior DevOps / SRE / Cloud Architect / Platform Engineering roles. Let\'s connect!',
-      skills: '<span class="highlight">Kubernetes</span> | <span class="highlight">AWS</span> | <span class="highlight">Azure</span> | <span class="highlight">GCP</span> | <span class="highlight">Terraform</span> | <span class="highlight">Docker</span> | <span class="highlight">Python</span> | <span class="highlight">Jenkins</span> | <span class="highlight">Ansible</span> | <span class="highlight">Grafana</span> | <span class="highlight">Prometheus</span> | <span class="highlight">ELK</span>',
+      skills: '<span class="highlight">Kubernetes</span> | <span class="highlight">AWS</span> | <span class="highlight">Azure</span> | <span class="highlight">GCP</span> | <span class="highlight">DigitalOcean</span> | <span class="highlight">Terraform</span> | <span class="highlight">Docker</span> | <span class="highlight">Go</span> | <span class="highlight">Python</span> | <span class="highlight">Jenkins</span> | <span class="highlight">Ansible</span> | <span class="highlight">Grafana</span> | <span class="highlight">Prometheus</span> | <span class="highlight">Loki</span> | <span class="highlight">Cloudflare</span>',
       experience: '<span class="highlight">Insight</span> (2023-Present) → <span class="highlight">Cognizant</span> (2021-2023) → <span class="highlight">HCL</span> (2018-2021) → <span class="highlight">Atem Corp</span> (2017-2018)',
       certs: '<span class="highlight">CKS</span> | <span class="highlight">CKA</span> | <span class="highlight">CKAD</span> | <span class="highlight">AWS SA</span> | <span class="highlight">GCP ACE</span> | <span class="highlight">Terraform Associate</span> | <span class="highlight">RHCE</span> + 15 more',
       contact: 'Email: <span class="highlight">mayank.c.koli@gmail.com</span> | Phone: <span class="highlight">+91 8826634734</span> | <a href="https://www.linkedin.com/in/mayankckoli/" target="_blank" rel="noopener">LinkedIn</a> | <a href="https://github.com/manukoli1986" target="_blank" rel="noopener">GitHub</a>',
@@ -1060,7 +1066,7 @@ Continuous Integration tools.
       email: 'mayank.c.koli@gmail.com',
       phone: '+91 8826634734',
       website: 'https://mayankkoli.com',
-      skills: ['AWS', 'Azure', 'GCP', 'Kubernetes', 'Docker', 'Terraform', 'Python', 'Bash', 'Jenkins', 'GitHub Actions', 'Azure DevOps', 'Ansible', 'ArgoCD', 'Helm', 'Istio', 'Grafana', 'Prometheus', 'ELK Stack', 'Datadog', 'Linux', 'JavaScript'],
+      skills: ['AWS', 'Azure', 'GCP', 'DigitalOcean', 'Cloudflare', 'Kubernetes', 'Docker', 'Terraform', 'Go', 'Python', 'Bash', 'Jenkins', 'n8n', 'Loki', 'PagerDuty', 'GitHub Actions', 'Azure DevOps', 'Ansible', 'ArgoCD', 'Helm', 'Istio', 'Grafana', 'Prometheus', 'ELK Stack', 'Datadog', 'Linux', 'JavaScript'],
       certifications: ['CKS - Certified Kubernetes Security Specialist', 'CKA - Certified Kubernetes Administrator', 'CKAD - Certified Kubernetes Application Developer', 'AWS Certified Solutions Architect - Associate', 'Google Cloud Associate Cloud Engineer', 'HashiCorp Terraform Associate', 'OPA Policy Authoring - Styra', 'Kubecost Technical Certification', 'Introduction to GitOps - Linux Foundation', 'Jenkins Administration & Automation - Xebia', 'Red Hat Certified Virtualization Administrator', 'RHCE - Red Hat Certified Engineer', 'AI/ML certifications from Skillsoft (2025)', 'Datadog APM & Observability certifications'],
       workHistory: [
         { role: 'Senior Site Reliability Engineer', company: 'Insight', period: 'Aug 2023 - Present', details: 'AWS, Azure DevOps, GitHub Actions, Istio, Kubernetes, CI/CD, Team Leadership' },
