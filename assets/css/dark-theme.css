@@ -1,25 +1,37 @@
 /* =============================================================
-   DARK TERMINAL THEME - Agentic AI Inspired
+   SKY GLOW LIGHT THEME — Professional Cloud & AI Architect
+   Light page, soft blue glow, dark terminal window as contrast
    ============================================================= */
 
 /* ---------- Color Variables ---------- */
 :root {
-  --bg-primary: #0b1220;
-  --bg-secondary: #101a2c;
-  --bg-card: #152238;
-  --bg-card-hover: #1c2b47;
-  --text-primary: #e8edf5;
-  --text-secondary: #9fb0c7;
-  --accent: #60a5fa;
-  --accent-dim: rgba(96, 165, 250, 0.12);
-  --accent-glow: rgba(96, 165, 250, 0.25);
-  --accent-green: #93c5fd;
-  --accent-purple: #a78bfa;
-  --border-color: #223049;
+  /* Light page */
+  --bg-primary: #f6f9fc;
+  --bg-secondary: #eef3f9;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0f6ff;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-dim: rgba(37, 99, 235, 0.08);
+  --accent-glow: rgba(37, 99, 235, 0.18);
+  --accent-green: #1d4ed8;   /* hover shade (kept name for compat) */
+  --accent-purple: #7c3aed;
+  --border-color: #e2e8f0;
+  --card-glow: 0 8px 30px rgba(37, 99, 235, 0.10);
+  --card-glow-strong: 0 12px 40px rgba(37, 99, 235, 0.16);
+
+  /* Dark terminal island */
   --terminal-bg: #0d1526;
   --terminal-border: #2a3b5a;
-  --glass-bg: rgba(16, 26, 44, 0.7);
-  --glass-border: rgba(96, 165, 250, 0.1);
+  --term-text: #e8edf5;
+  --term-text-soft: #9fb0c7;
+  --term-accent: #60a5fa;
+  --term-green: #34d399;
+
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(37, 99, 235, 0.12);
 }
 
 /* Professional typeface */
@@ -31,7 +43,7 @@ h1, h2, h3, h4, h5 {
   letter-spacing: -0.01em;
 }
 
-/* ---------- Global Dark Overrides ---------- */
+/* ---------- Global Overrides ---------- */
 body {
   background: var(--bg-primary) !important;
   color: var(--text-primary) !important;
@@ -41,14 +53,20 @@ a {
   color: var(--accent) !important;
 }
 a:hover {
-  color: var(--accent-green) !important;
+  color: var(--accent-hover) !important;
 }
 
 /* ---------- Facts / Impact Counters ---------- */
 .facts .count-box {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: var(--card-glow);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.facts .count-box:hover {
+  box-shadow: var(--card-glow-strong);
+  transform: translateY(-3px);
 }
 .facts .count-box i {
   color: var(--accent) !important;
@@ -67,43 +85,55 @@ a:hover {
 .hero-cta .btn-cta {
   border: 1px solid var(--accent);
   color: var(--accent) !important;
+  background: var(--bg-card);
   transition: all 0.3s ease;
 }
 .hero-cta .btn-cta:hover {
-  color: var(--accent-green) !important;
-  border-color: var(--accent-green);
-  box-shadow: 0 0 15px var(--accent-glow);
+  color: var(--accent-hover) !important;
+  border-color: var(--accent-hover);
+  box-shadow: 0 6px 20px var(--accent-glow);
+  transform: translateY(-1px);
 }
 .hero-cta .btn-cta-solid {
   background: var(--accent);
-  color: var(--bg-primary) !important;
+  border-color: var(--accent);
+  color: #ffffff !important;
+  box-shadow: 0 6px 20px var(--accent-glow);
 }
 .hero-cta .btn-cta-solid:hover {
-  background: var(--accent-green);
-  color: var(--bg-primary) !important;
-  border-color: var(--accent-green);
+  background: var(--accent-hover);
+  color: #ffffff !important;
+  border-color: var(--accent-hover);
+  box-shadow: 0 8px 28px var(--accent-glow);
 }
 
 /* ---------- Sidebar ---------- */
 #header {
-  background: var(--bg-secondary) !important;
+  background: #ffffff !important;
   border-right: 1px solid var(--border-color);
+  box-shadow: 4px 0 24px rgba(15, 23, 42, 0.04);
 }
 
 #header .profile img {
   border-color: var(--accent) !important;
-  box-shadow: 0 0 20px var(--accent-dim);
+  box-shadow: 0 0 24px var(--accent-glow);
+}
+
+#header .profile h1,
+#header .profile h1 a,
+#header .profile h1 a:hover {
+  color: var(--text-primary) !important;
 }
 
 #header .profile .social-links a {
-  background: var(--bg-card) !important;
+  background: var(--bg-primary) !important;
   color: var(--accent) !important;
   border: 1px solid var(--border-color);
 }
 #header .profile .social-links a:hover {
   background: var(--accent) !important;
-  color: var(--bg-primary) !important;
-  box-shadow: 0 0 15px var(--accent-glow);
+  color: #ffffff !important;
+  box-shadow: 0 4px 15px var(--accent-glow);
 }
 
 .nav-menu a, .nav-menu a:focus {
@@ -127,7 +157,7 @@ a:hover {
 
 /* ---------- Hero / Terminal ---------- */
 #hero {
-  background: var(--terminal-bg) !important;
+  background: var(--bg-primary) !important;
   position: relative;
   overflow: hidden;
 }
@@ -135,22 +165,18 @@ a:hover {
   background: none !important;
 }
 
-/* Animated grid background */
+/* Soft grid + radial glow background */
 #hero::after {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   background-image:
+    radial-gradient(ellipse 60% 50% at 50% 40%, rgba(37, 99, 235, 0.08), transparent),
     linear-gradient(var(--border-color) 1px, transparent 1px),
     linear-gradient(90deg, var(--border-color) 1px, transparent 1px);
-  background-size: 50px 50px;
-  opacity: 0.3;
+  background-size: 100% 100%, 50px 50px, 50px 50px;
+  opacity: 0.6;
   z-index: 0;
-  animation: gridMove 20s linear infinite;
-}
-@keyframes gridMove {
-  0% { transform: translate(0, 0); }
-  100% { transform: translate(50px, 50px); }
 }
 
 .terminal-container {
@@ -162,7 +188,7 @@ a:hover {
   border: 1px solid var(--terminal-border);
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5), 0 0 40px var(--accent-dim);
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.25), 0 0 50px var(--accent-glow);
   font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
 }
 
@@ -185,35 +211,38 @@ a:hover {
 .terminal-title {
   flex: 1;
   text-align: center;
-  color: var(--text-secondary);
+  color: var(--term-text-soft);
   font-size: 13px;
 }
 
 .terminal-body {
   padding: 20px;
   min-height: 220px;
-  color: var(--text-primary);
+  color: var(--term-text);
   font-size: 15px;
   line-height: 1.8;
 }
 .terminal-body .prompt {
-  color: var(--accent-green);
+  color: var(--term-green);
 }
 .terminal-body .command {
-  color: var(--text-primary);
+  color: var(--term-text);
 }
 .terminal-body .output {
-  color: var(--text-secondary);
+  color: var(--term-text-soft);
   padding-left: 0;
 }
 .terminal-body .output .highlight {
-  color: var(--accent);
+  color: var(--term-accent);
+}
+.terminal-body .output a {
+  color: var(--term-accent) !important;
 }
 .terminal-body .cursor {
   display: inline-block;
   width: 10px;
   height: 18px;
-  background: var(--accent);
+  background: var(--term-accent);
   animation: blink 1s step-end infinite;
   vertical-align: text-bottom;
   margin-left: 2px;
@@ -229,7 +258,7 @@ a:hover {
   margin-top: 10px;
 }
 .terminal-input-line .prompt {
-  color: var(--accent-green);
+  color: var(--term-green);
   margin-right: 8px;
   white-space: nowrap;
 }
@@ -237,11 +266,11 @@ a:hover {
   flex: 1;
   background: none;
   border: none;
-  color: var(--text-primary);
+  color: var(--term-text);
   font-family: inherit;
   font-size: 15px;
   outline: none;
-  caret-color: var(--accent);
+  caret-color: var(--term-accent);
 }
 
 /* ---------- Sections ---------- */
@@ -302,16 +331,17 @@ section {
   border: 1px solid var(--border-color);
   border-radius: 50px;
   color: var(--text-primary);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 500;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
   transition: all 0.3s ease;
   cursor: default;
 }
 .skill-tag:hover {
   border-color: var(--accent);
-  background: var(--accent-dim);
-  box-shadow: 0 0 20px var(--accent-dim);
+  background: var(--bg-card-hover);
+  box-shadow: 0 6px 20px var(--accent-glow);
   transform: translateY(-2px);
 }
 .skill-tag .skill-level {
@@ -373,8 +403,9 @@ section {
 /* ---------- Contact ---------- */
 .contact .info {
   background: var(--bg-card) !important;
-  box-shadow: 0 0 24px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: var(--card-glow) !important;
   border: 1px solid var(--border-color);
+  border-radius: 12px;
 }
 .contact .info i {
   background: var(--accent-dim) !important;
@@ -390,37 +421,39 @@ section {
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
   background: var(--accent) !important;
-  color: var(--bg-primary) !important;
+  color: #ffffff !important;
 }
 
 .contact .php-email-form {
   background: var(--bg-card) !important;
-  box-shadow: 0 0 24px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: var(--card-glow) !important;
   border: 1px solid var(--border-color);
+  border-radius: 12px;
 }
 .contact .php-email-form label {
   color: var(--text-secondary) !important;
 }
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  background: var(--bg-secondary) !important;
+  background: var(--bg-primary) !important;
   border: 1px solid var(--border-color) !important;
   color: var(--text-primary) !important;
 }
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent) !important;
-  box-shadow: 0 0 10px var(--accent-dim) !important;
+  box-shadow: 0 0 10px var(--accent-glow) !important;
 }
 .contact .php-email-form button[type=submit] {
   background: var(--accent) !important;
-  color: var(--bg-primary) !important;
+  color: #ffffff !important;
   font-weight: 600;
   border-radius: 6px;
+  box-shadow: 0 6px 20px var(--accent-glow);
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: var(--accent-green) !important;
-  box-shadow: 0 0 20px var(--accent-glow);
+  background: var(--accent-hover) !important;
+  box-shadow: 0 8px 28px var(--accent-glow);
 }
 
 .contact iframe {
@@ -431,19 +464,20 @@ section {
 /* ---------- Back to Top ---------- */
 .back-to-top {
   background: var(--accent) !important;
-  color: var(--bg-primary) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 15px var(--accent-glow);
 }
 .back-to-top i {
-  color: var(--bg-primary) !important;
+  color: #ffffff !important;
 }
 .back-to-top:hover {
-  background: var(--accent-green) !important;
+  background: var(--accent-hover) !important;
 }
 
 /* ---------- Mobile nav toggle ---------- */
 .mobile-nav-toggle {
   background-color: var(--accent) !important;
-  color: var(--bg-primary) !important;
+  color: #ffffff !important;
 }
 
 /* ---------- AI Chat Widget ---------- */
@@ -461,22 +495,22 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 20px rgba(0, 229, 255, 0.4);
+  box-shadow: 0 4px 20px var(--accent-glow);
   transition: all 0.3s ease;
   animation: chatPulse 2s ease-in-out infinite;
 }
 .ai-chat-toggle:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 30px rgba(0, 229, 255, 0.6);
+  box-shadow: 0 6px 30px rgba(37, 99, 235, 0.35);
 }
 .ai-chat-toggle svg {
   width: 28px;
   height: 28px;
-  fill: var(--bg-primary);
+  fill: #ffffff;
 }
 @keyframes chatPulse {
-  0%, 100% { box-shadow: 0 4px 20px rgba(0, 229, 255, 0.4); }
-  50% { box-shadow: 0 4px 30px rgba(0, 229, 255, 0.7); }
+  0%, 100% { box-shadow: 0 4px 20px rgba(37, 99, 235, 0.25); }
+  50% { box-shadow: 0 4px 30px rgba(37, 99, 235, 0.45); }
 }
 
 .ai-chat-window {
@@ -485,26 +519,25 @@ section {
   right: 25px;
   width: 380px;
   max-height: 520px;
-  background: var(--bg-secondary);
-  border: 1px solid var(--terminal-border);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
   border-radius: 16px;
   z-index: 10001;
   display: none;
   flex-direction: column;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.18);
 }
 .ai-chat-window.open {
   display: flex;
 }
 
 .ai-chat-header {
-  background: linear-gradient(135deg, #0d1117, #161b22);
+  background: linear-gradient(135deg, var(--accent), var(--accent-purple));
   padding: 16px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--terminal-border);
 }
 .ai-chat-header-left {
   display: flex;
@@ -515,7 +548,7 @@ section {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), var(--accent-purple));
+  background: rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -524,23 +557,23 @@ section {
 .ai-chat-header h4 {
   margin: 0;
   font-size: 15px;
-  color: var(--text-primary);
+  color: #ffffff;
   font-weight: 600;
 }
 .ai-chat-header .status {
   font-size: 11px;
-  color: var(--accent-green);
+  color: #d1fae5;
 }
 .ai-chat-close {
   background: none;
   border: none;
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 20px;
   cursor: pointer;
   padding: 4px;
 }
 .ai-chat-close:hover {
-  color: var(--text-primary);
+  color: #ffffff;
 }
 
 .ai-chat-messages {
@@ -562,26 +595,29 @@ section {
 }
 .ai-msg.bot {
   align-self: flex-start;
-  background: var(--bg-card);
+  background: var(--bg-secondary);
   color: var(--text-primary);
   border: 1px solid var(--border-color);
   border-bottom-left-radius: 4px;
 }
 .ai-msg.user {
   align-self: flex-end;
-  background: linear-gradient(135deg, rgba(0, 229, 255, 0.2), rgba(167, 139, 250, 0.2));
-  color: var(--text-primary);
-  border: 1px solid var(--glass-border);
+  background: var(--accent);
+  color: #ffffff;
   border-bottom-right-radius: 4px;
+}
+.ai-msg.user a {
+  color: #ffffff !important;
+  text-decoration: underline;
 }
 
 .ai-chat-input-area {
   padding: 12px 16px;
-  border-top: 1px solid var(--terminal-border);
+  border-top: 1px solid var(--border-color);
   display: flex;
   gap: 8px;
   align-items: center;
-  background: var(--terminal-bg);
+  background: var(--bg-primary);
 }
 .ai-chat-input {
   flex: 1;
@@ -613,12 +649,12 @@ section {
   transition: all 0.2s;
 }
 .ai-chat-send:hover {
-  background: var(--accent-green);
+  background: var(--accent-hover);
 }
 .ai-chat-send svg {
   width: 18px;
   height: 18px;
-  fill: var(--bg-primary);
+  fill: #ffffff;
 }
 
 .ai-typing {
@@ -649,11 +685,11 @@ section {
   background: var(--bg-primary);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--border-color);
+  background: #cbd5e1;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-dim);
+  background: var(--accent);
 }
 
 /* ---------- Google Fonts for Terminal ---------- */
@@ -684,7 +720,7 @@ section {
   }
 }
 
-/* ---------- Footer dark ---------- */
+/* ---------- Footer ---------- */
 #footer {
   background: var(--bg-secondary) !important;
   border-top: 1px solid var(--border-color);
