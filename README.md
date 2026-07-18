@@ -32,6 +32,7 @@ Interactive pieces (all client-side, no backend):
 ├── index.html                    # the whole site
 ├── privacy.html                  # privacy policy (linked in footer)
 ├── CNAME                         # custom domain for GitHub Pages -> mayankkoli.com
+├── wrangler.jsonc                # Cloudflare Workers static-asset deploy config
 ├── robots.txt                    # allows all crawlers, points to sitemap
 ├── sitemap.xml                   # for Google Search Console
 ├── google40e94aeaf8e5d23f.html   # Google Search Console verification
@@ -60,6 +61,33 @@ the bottom of `index.html` (terminal + chat widget).
   the repo root — if it's deleted, Pages reverts to `manukoli1986.github.io/cv`.
 - **HTTPS** is enforced (Pages provisions a Let's Encrypt certificate automatically once DNS
   resolves).
+
+> The live site is currently served by **GitHub Pages**. The Cloudflare Workers config below
+> is an alternative host — see the note under it before attaching the domain to it.
+
+## Alternative host (Cloudflare Workers)
+
+`wrangler.jsonc` lets the same static files be deployed as a Cloudflare Worker (static assets):
+
+```jsonc
+{
+  "name": "mayankkoli-cv",
+  "compatibility_date": "2026-07-19",
+  "assets": { "directory": "." }   // repo root, where index.html lives
+}
+```
+
+Deploy from the Cloudflare dashboard (connect the GitHub repo, then **Deploy**) or from the CLI:
+
+```bash
+npx wrangler deploy        # publishes to https://mayankkoli-cv.<account>.workers.dev
+```
+
+> **⚠️ Domain cutover, not addition.** `mayankkoli.com` currently resolves to GitHub Pages
+> (the four `185.199.108–111.153` A records). A `*.workers.dev` deploy changes nothing. But if
+> you attach `mayankkoli.com` as a custom domain to the Worker, Cloudflare takes over the apex
+> and GitHub Pages stops serving the site — only one host can own the domain. Pick one; don't
+> point the apex at both.
 
 ### Local preview
 
