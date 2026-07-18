@@ -819,24 +819,11 @@ Continuous Integration tools.
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
-  <!-- EmailJS SDK -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- Contact form via FormSubmit.co (no account needed; first submission
+       triggers a one-time activation email to the address below) -->
   <script>
     (function() {
-      // =====================================================
-      // HOW TO SET UP EmailJS (free tier: 200 emails/month):
-      // 1. Sign up at https://www.emailjs.com/
-      // 2. Add an Email Service (e.g. Gmail) -> copy Service ID
-      // 3. Create an Email Template with variables:
-      //    {{from_name}}, {{reply_to}}, {{subject}}, {{message}}
-      // 4. Go to Account -> copy your Public Key
-      // 5. Replace the 3 values below:
-      // =====================================================
-      var EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';       // e.g. 'aBcDeFgHiJkLmN'
-      var EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';       // e.g. 'service_xyz123'
-      var EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';     // e.g. 'template_abc456'
-
-      emailjs.init(EMAILJS_PUBLIC_KEY);
+      var CONTACT_EMAIL = 'mayank.c.koli@gmail.com';
 
       var form = document.getElementById('contact-form');
       form.addEventListener('submit', function(e) {
@@ -850,15 +837,30 @@ Continuous Integration tools.
         errorMsg.style.display = 'none';
         sentMsg.style.display = 'none';
 
-        emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
+        fetch('https://formsubmit.co/ajax/' + CONTACT_EMAIL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({
+            name: form.querySelector('#name').value,
+            email: form.querySelector('#email').value,
+            _replyto: form.querySelector('#email').value,
+            _subject: 'mayankkoli.com enquiry: ' + form.querySelector('#subject').value,
+            message: form.querySelector('#message').value
+          })
+        })
+          .then(function(res) {
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            return res.json();
+          })
           .then(function() {
             loading.style.display = 'none';
             sentMsg.style.display = 'block';
             form.reset();
-          }, function(error) {
+          })
+          .catch(function() {
             loading.style.display = 'none';
             errorMsg.style.display = 'block';
-            errorMsg.textContent = 'Failed to send message. Please try again later.';
+            errorMsg.textContent = 'Failed to send. Please email ' + CONTACT_EMAIL + ' directly.';
           });
       });
     })();
